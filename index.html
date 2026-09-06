@@ -16,8 +16,11 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
     touch-action: manipulation;
+    position: fixed;
+    width: 100%;
+    height: 100%;
   }
 
   h1 {
@@ -51,6 +54,9 @@
     border-radius: 6px;
     box-shadow: 0 0 40px rgba(15, 52, 96, 0.5);
     image-rendering: pixelated;
+    max-width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
   }
 
   .controls {
@@ -162,6 +168,7 @@
     #game-canvas {
       max-width: 100%;
       height: auto;
+      display: block;
     }
     
     .controls {
@@ -2107,8 +2114,22 @@ function loadLevel(idx) {
   history = [];
   won = false;
 
-  canvas.width = data.w * TILE;
-  canvas.height = data.h * TILE;
+  // Calculate available space for canvas
+  const headerHeight = 120; // h1 + level-name + info-bar
+  const controlsHeight = 100; // controls + dpad + help
+  const availableHeight = window.innerHeight - headerHeight - controlsHeight;
+  const availableWidth = window.innerWidth - 20;
+  
+  // Calculate tile size to fit
+  const maxTileByHeight = Math.floor(availableHeight / data.h);
+  const maxTileByWidth = Math.floor(availableWidth / data.w);
+  const optimalTile = Math.min(TILE, maxTileByHeight, maxTileByWidth);
+  
+  canvas.width = data.w * optimalTile;
+  canvas.height = data.h * optimalTile;
+  
+  // Store current tile size for drawing
+  canvas.dataset.tileSize = optimalTile;
 
   updateUI();
   draw();
@@ -2119,6 +2140,9 @@ function draw() {
   const { w, h, walls, targets, boxes } = grid;
   const targetSet = new Set(targets.map(t => `${t.x},${t.y}`));
   const boxSet = new Set(boxes.map(b => `${b.x},${b.y}`));
+  
+  // Use dynamic tile size
+  const TILE = parseInt(canvas.dataset.tileSize) || 48;
 
   ctx.fillStyle = '#16213e';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -2382,6 +2406,15 @@ document.addEventListener('keydown', e => {
 });
 
 // ── Start ──────────────────────────────────────────────────────────
+// Handle window resize
+let resizeTimeout;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    loadLevel(currentLevel);
+  }, 200);
+});
+
 // Load saved progress or start from level 1
 const savedProgress = parseInt(localStorage.getItem('sokoban_highest_solved') || '0');
 const startLevel = savedProgress > 0 && savedProgress < TOTAL_LEVELS ? savedProgress : 0;
