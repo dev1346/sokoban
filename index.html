@@ -2365,12 +2365,11 @@ document.addEventListener('touchend', (e) => {
     // Horizontal swipe
     if (Math.abs(deltaX) > SWIPE_THRESHOLD) {
       if (isRotated) {
-        // Rotated 90° clockwise: screen up = game left, screen down = game right
-        // screen left = game down, screen right = game up
+        // Rotated 90° clockwise: swap the mappings
         if (deltaX > 0) {
-          move(0, -1); // Screen right → Game up
+          move(0, 1); // Screen right → Game down
         } else {
-          move(0, 1); // Screen left → Game down
+          move(0, -1); // Screen left → Game up
         }
       } else {
         if (deltaX > 0) {
@@ -2384,11 +2383,11 @@ document.addEventListener('touchend', (e) => {
     // Vertical swipe
     if (Math.abs(deltaY) > SWIPE_THRESHOLD) {
       if (isRotated) {
-        // Rotated 90° clockwise: screen up = game left, screen down = game right
+        // Rotated 90° clockwise: swap the mappings
         if (deltaY > 0) {
-          move(1, 0); // Screen down → Game right
+          move(-1, 0); // Screen down → Game left
         } else {
-          move(-1, 0); // Screen up → Game left
+          move(1, 0); // Screen up → Game right
         }
       } else {
         if (deltaY > 0) {
