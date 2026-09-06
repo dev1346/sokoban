@@ -1,0 +1,17 @@
+{
+  "id": 144,
+  "name": "Star Swap",
+  "difficulty": 15,
+  "boxes": 3,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "######",
+    "#    #",
+    "# #@ #",
+    "# $* #",
+    "# .* #",
+    "#    #",
+    "######"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": 3,
+  "name": "Around the Block",
+  "difficulty": 1,
+  "boxes": 1,
+  "optimalMoves": 5,
+  "optimalPushes": 3,
+  "grid": [
+    "#####",
+    "#.  #",
+    "#   #",
+    "# $ #",
+    "# @ #",
+    "#####"
+  ]
+}

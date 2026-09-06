@@ -1,0 +1,17 @@
+{
+  "id": 19,
+  "name": "Scatter",
+  "difficulty": 2,
+  "boxes": 4,
+  "optimalMoves": 22,
+  "optimalPushes": 7,
+  "grid": [
+    "########",
+    "# . .  #",
+    "# $$ $ #",
+    "## #  ##",
+    "# .$.  #",
+    "#   @  #",
+    "########"
+  ]
+}

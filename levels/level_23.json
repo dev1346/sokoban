@@ -1,0 +1,16 @@
+{
+  "id": 23,
+  "name": "Corner Pocket",
+  "difficulty": 3,
+  "boxes": 2,
+  "optimalMoves": 17,
+  "optimalPushes": 5,
+  "grid": [
+    "####",
+    "#  ####",
+    "# . . #",
+    "# $$#@#",
+    "##    #",
+    " ######"
+  ]
+}

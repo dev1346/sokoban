@@ -1,0 +1,18 @@
+{
+  "id": 37,
+  "name": "Push Forward",
+  "difficulty": 4,
+  "boxes": 2,
+  "optimalMoves": 50,
+  "optimalPushes": 16,
+  "grid": [
+    "#######",
+    "#     ###",
+    "#  @$$..#",
+    "#### ## #",
+    "  #     #",
+    "  #  ####",
+    "  #  #",
+    "  ####"
+  ]
+}

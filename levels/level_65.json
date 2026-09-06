@@ -1,0 +1,19 @@
+{
+  "id": 65,
+  "name": "Labyrinth",
+  "difficulty": 7,
+  "boxes": 3,
+  "optimalMoves": 52,
+  "optimalPushes": 23,
+  "grid": [
+    "####",
+    "#. ##",
+    "#.@ #",
+    "#. $#",
+    "##$ ###",
+    " # $  #",
+    " #    #",
+    " #  ###",
+    " ####"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": 29,
+  "name": "Side Entrance",
+  "difficulty": 3,
+  "boxes": 2,
+  "optimalMoves": 35,
+  "optimalPushes": 9,
+  "grid": [
+    "# #####",
+    "  #   #",
+    "###$$@#",
+    "#   ###",
+    "#     #",
+    "# . . #",
+    "#######"
+  ]
+}

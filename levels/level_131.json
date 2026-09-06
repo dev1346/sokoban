@@ -1,0 +1,18 @@
+{
+  "id": 131,
+  "name": "Wall Push II",
+  "difficulty": 14,
+  "boxes": 3,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "#####",
+    "###  ##",
+    "#  $  ##",
+    "#@#$# ##",
+    "# .$. .#",
+    "###    #",
+    " ##  ###",
+    "  #####"
+  ]
+}

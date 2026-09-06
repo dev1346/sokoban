@@ -1,0 +1,16 @@
+{
+  "id": 11,
+  "name": "Tight Room",
+  "difficulty": 2,
+  "boxes": 2,
+  "optimalMoves": 7,
+  "optimalPushes": 4,
+  "grid": [
+    "#####",
+    "#.. #",
+    "#   #",
+    "#$$ #",
+    "# @ #",
+    "#####"
+  ]
+}

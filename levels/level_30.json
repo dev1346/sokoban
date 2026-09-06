@@ -1,0 +1,17 @@
+{
+  "id": 30,
+  "name": "Tunnel Exit",
+  "difficulty": 3,
+  "boxes": 2,
+  "optimalMoves": 37,
+  "optimalPushes": 14,
+  "grid": [
+    "###",
+    "######@##",
+    "#    .* #",
+    "#   #   #",
+    "#####$# #",
+    "    #   #",
+    "    #####"
+  ]
+}

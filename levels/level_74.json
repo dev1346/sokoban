@@ -1,0 +1,18 @@
+{
+  "id": 74,
+  "name": "Star Point",
+  "difficulty": 8,
+  "boxes": 2,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "#####",
+    " #   #",
+    "##.# #",
+    "#  @ #",
+    "#  $ #",
+    "# #*##",
+    "#   #",
+    "#####"
+  ]
+}

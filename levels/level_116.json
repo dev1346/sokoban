@@ -1,0 +1,16 @@
+{
+  "id": 116,
+  "name": "Diamond Ring",
+  "difficulty": 12,
+  "boxes": 7,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "#########",
+    "#   @   #",
+    "#.$$.$$.#",
+    "#$..$..$#",
+    "#   #   #",
+    "#########"
+  ]
+}

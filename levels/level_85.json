@@ -1,0 +1,18 @@
+{
+  "id": 85,
+  "name": "Three Dots",
+  "difficulty": 9,
+  "boxes": 3,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "#######",
+    "#     #",
+    "# .$  #",
+    "##.$###",
+    "#  @  #",
+    "# .$# #",
+    "#     #",
+    "#######"
+  ]
+}

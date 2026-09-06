@@ -1,0 +1,18 @@
+{
+  "id": 73,
+  "name": "Narrow Hall",
+  "difficulty": 8,
+  "boxes": 2,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "####",
+    "#  #",
+    "#  #",
+    "#  ###",
+    "#.$$@#",
+    "#  . #",
+    "#  ###",
+    "####"
+  ]
+}

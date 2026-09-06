@@ -1,0 +1,17 @@
+{
+  "id": 27,
+  "name": "Open Field",
+  "difficulty": 3,
+  "boxes": 2,
+  "optimalMoves": 33,
+  "optimalPushes": 9,
+  "grid": [
+    "#####",
+    "#   #",
+    "# @ #",
+    "# $$###",
+    "##. . #",
+    " #    #",
+    " ######"
+  ]
+}

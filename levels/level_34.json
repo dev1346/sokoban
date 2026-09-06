@@ -1,0 +1,19 @@
+{
+  "id": 34,
+  "name": "Open Door",
+  "difficulty": 4,
+  "boxes": 2,
+  "optimalMoves": 47,
+  "optimalPushes": 15,
+  "grid": [
+    "#####",
+    "#   ###",
+    "#. .  #",
+    "#   # #",
+    "## #  #",
+    " #@$$ #",
+    " #    #",
+    " #  ###",
+    " ####"
+  ]
+}

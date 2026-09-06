@@ -1,0 +1,17 @@
+{
+  "id": 62,
+  "name": "Side Step",
+  "difficulty": 7,
+  "boxes": 3,
+  "optimalMoves": 44,
+  "optimalPushes": 11,
+  "grid": [
+    "####",
+    "#  ####",
+    "#.*$  #",
+    "# .$# #",
+    "## @  #",
+    " #   ##",
+    " #####"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": 113,
+  "name": "Quick Push",
+  "difficulty": 12,
+  "boxes": 2,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "#####",
+    "####@  #",
+    "#  $*. #",
+    "#     ##",
+    "#  #####",
+    "####"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": 24,
+  "name": "Hidden Star",
+  "difficulty": 3,
+  "boxes": 2,
+  "optimalMoves": 23,
+  "optimalPushes": 6,
+  "grid": [
+    "#####",
+    "#   ###",
+    "#  $  #",
+    "##* . #",
+    " #   @#",
+    " ######"
+  ]
+}

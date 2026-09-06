@@ -1,0 +1,18 @@
+{
+  "id": 20,
+  "name": "Three Maze",
+  "difficulty": 2,
+  "boxes": 3,
+  "optimalMoves": 24,
+  "optimalPushes": 7,
+  "grid": [
+    "  ######",
+    "  #    #",
+    " ##$#  #",
+    " # . $ #",
+    "##.  # #",
+    "#  $@  #",
+    "#   .  #",
+    "########"
+  ]
+}

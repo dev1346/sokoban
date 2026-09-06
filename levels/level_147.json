@@ -1,0 +1,17 @@
+{
+  "id": 147,
+  "name": "Center Push",
+  "difficulty": 15,
+  "boxes": 4,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "#######",
+    " #     #",
+    " # .$. #",
+    "## $@$ #",
+    "#  .$. #",
+    "#      #",
+    "########"
+  ]
+}

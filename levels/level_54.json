@@ -1,0 +1,16 @@
+{
+  "id": 54,
+  "name": "Room Service",
+  "difficulty": 6,
+  "boxes": 3,
+  "optimalMoves": 23,
+  "optimalPushes": 7,
+  "grid": [
+    "########",
+    "#      #",
+    "# .**$@#",
+    "#      #",
+    "#####  #",
+    "    ####"
+  ]
+}

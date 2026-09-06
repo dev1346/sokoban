@@ -1,0 +1,17 @@
+{
+  "id": 26,
+  "name": "Double Diamond",
+  "difficulty": 3,
+  "boxes": 2,
+  "optimalMoves": 33,
+  "optimalPushes": 8,
+  "grid": [
+    "####",
+    "# .#",
+    "#  ###",
+    "#*@  #",
+    "#  $ #",
+    "#  ###",
+    "####"
+  ]
+}

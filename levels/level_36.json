@@ -1,0 +1,17 @@
+{
+  "id": 36,
+  "name": "Corner Trap",
+  "difficulty": 4,
+  "boxes": 2,
+  "optimalMoves": 50,
+  "optimalPushes": 10,
+  "grid": [
+    "######",
+    "#   .#",
+    "# ## ##",
+    "#  $$@#",
+    "# #   #",
+    "#.  ###",
+    "#####"
+  ]
+}

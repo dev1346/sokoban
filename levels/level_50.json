@@ -1,0 +1,17 @@
+{
+  "id": 50,
+  "name": "Simple Swap",
+  "difficulty": 5,
+  "boxes": 3,
+  "optimalMoves": 16,
+  "optimalPushes": 3,
+  "grid": [
+    "######",
+    "#    #",
+    "# #@ #",
+    "# $* #",
+    "# .* #",
+    "#    #",
+    "######"
+  ]
+}

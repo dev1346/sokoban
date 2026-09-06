@@ -1,0 +1,17 @@
+{
+  "id": 12,
+  "name": "Wide Room",
+  "difficulty": 2,
+  "boxes": 2,
+  "optimalMoves": 11,
+  "optimalPushes": 5,
+  "grid": [
+    "########",
+    "# .    #",
+    "#  $$  #",
+    "#      #",
+    "#    . #",
+    "# @    #",
+    "########"
+  ]
+}

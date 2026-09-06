@@ -1,0 +1,17 @@
+{
+  "id": 18,
+  "name": "Room Layout",
+  "difficulty": 2,
+  "boxes": 4,
+  "optimalMoves": 22,
+  "optimalPushes": 8,
+  "grid": [
+    "########",
+    "# .  . #",
+    "# $$ $ #",
+    "## #  ##",
+    "# .$.  #",
+    "#   @  #",
+    "########"
+  ]
+}

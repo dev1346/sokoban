@@ -1,0 +1,18 @@
+{
+  "id": 66,
+  "name": "Side Room",
+  "difficulty": 7,
+  "boxes": 3,
+  "optimalMoves": 64,
+  "optimalPushes": 14,
+  "grid": [
+    "######",
+    "#  @ #",
+    "#  # ##",
+    "# .#  ##",
+    "# .$$$ #",
+    "# .#   #",
+    "####   #",
+    "   #####"
+  ]
+}

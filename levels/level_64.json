@@ -1,0 +1,16 @@
+{
+  "id": 64,
+  "name": "Push Trio",
+  "difficulty": 7,
+  "boxes": 3,
+  "optimalMoves": 50,
+  "optimalPushes": 15,
+  "grid": [
+    "#######",
+    "#     #",
+    "#@$$$ ##",
+    "#  #...#",
+    "##    ##",
+    " ######"
+  ]
+}

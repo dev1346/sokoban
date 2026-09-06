@@ -1,0 +1,17 @@
+{
+  "id": 63,
+  "name": "Three Lane",
+  "difficulty": 7,
+  "boxes": 3,
+  "optimalMoves": 45,
+  "optimalPushes": 11,
+  "grid": [
+    "######",
+    "#... #",
+    "#  $ #",
+    "# #$##",
+    "#  $ #",
+    "#  @ #",
+    "######"
+  ]
+}

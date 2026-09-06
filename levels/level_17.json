@@ -1,0 +1,17 @@
+{
+  "id": 17,
+  "name": "Row Push",
+  "difficulty": 2,
+  "boxes": 3,
+  "optimalMoves": 31,
+  "optimalPushes": 15,
+  "grid": [
+    "#########",
+    "# . . . #",
+    "#  $$$  #",
+    "##  #  ##",
+    "#       #",
+    "#   @   #",
+    "#########"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": 38,
+  "name": "Key Hole",
+  "difficulty": 4,
+  "boxes": 2,
+  "optimalMoves": 51,
+  "optimalPushes": 10,
+  "grid": [
+    "#######",
+    "#     #",
+    "# # # #",
+    "#. $*@#",
+    "#   ###",
+    "#####"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": 45,
+  "name": "Broken Wall",
+  "difficulty": 5,
+  "boxes": 2,
+  "optimalMoves": 83,
+  "optimalPushes": 22,
+  "grid": [
+    "#######",
+    "###     #",
+    "# $ $   #",
+    "# ### #####",
+    "# @ . .   #",
+    "#   ###   #",
+    "##### #####"
+  ]
+}

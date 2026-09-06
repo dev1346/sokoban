@@ -1,0 +1,18 @@
+{
+  "id": 16,
+  "name": "Three Corridor",
+  "difficulty": 2,
+  "boxes": 3,
+  "optimalMoves": 18,
+  "optimalPushes": 4,
+  "grid": [
+    " ####",
+    " #  ##",
+    " # $ #",
+    "##.# #",
+    "# .$ #",
+    "# $@ #",
+    "# .  #",
+    "######"
+  ]
+}

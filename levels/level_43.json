@@ -1,0 +1,17 @@
+{
+  "id": 43,
+  "name": "Zigzag Push",
+  "difficulty": 5,
+  "boxes": 2,
+  "optimalMoves": 76,
+  "optimalPushes": 23,
+  "grid": [
+    "####",
+    "###  #####",
+    "#  $  @..#",
+    "# $    # #",
+    "### #### #",
+    "  #      #",
+    "  ########"
+  ]
+}

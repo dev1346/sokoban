@@ -1,0 +1,16 @@
+{
+  "id": 2,
+  "name": "Straight Down",
+  "difficulty": 1,
+  "boxes": 1,
+  "optimalMoves": 1,
+  "optimalPushes": 1,
+  "grid": [
+    "######",
+    "#    #",
+    "# @  #",
+    "# $  #",
+    "# .  #",
+    "######"
+  ]
+}

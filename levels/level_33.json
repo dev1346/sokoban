@@ -1,0 +1,18 @@
+{
+  "id": 33,
+  "name": "Star Catcher",
+  "difficulty": 4,
+  "boxes": 2,
+  "optimalMoves": 47,
+  "optimalPushes": 8,
+  "grid": [
+    "######",
+    "##    #",
+    "#  ## #",
+    "# # $ #",
+    "#  * .#",
+    "## #@##",
+    " #   #",
+    " #####"
+  ]
+}

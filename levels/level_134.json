@@ -1,0 +1,17 @@
+{
+  "id": 134,
+  "name": "Center Star II",
+  "difficulty": 14,
+  "boxes": 4,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "#######",
+    " #  .  #",
+    " #  $# #",
+    "###**@ ##",
+    " #  $# #",
+    " #  .  #",
+    " #######"
+  ]
+}

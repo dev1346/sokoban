@@ -1,0 +1,18 @@
+{
+  "id": 44,
+  "name": "Hidden Room",
+  "difficulty": 5,
+  "boxes": 2,
+  "optimalMoves": 78,
+  "optimalPushes": 18,
+  "grid": [
+    "######",
+    "  #    #",
+    "  # ##@##",
+    "### # $ #",
+    "# ..# $ #",
+    "#       #",
+    "#  ######",
+    "####"
+  ]
+}

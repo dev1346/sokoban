@@ -1,0 +1,18 @@
+{
+  "id": 129,
+  "name": "Five Stars",
+  "difficulty": 13,
+  "boxes": 5,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "#####",
+    "#   ###",
+    "#  @  #",
+    "##$*#.#",
+    " #  $$#",
+    " # .. #",
+    " #  * #",
+    " ######"
+  ]
+}

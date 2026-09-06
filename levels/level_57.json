@@ -1,0 +1,17 @@
+{
+  "id": 57,
+  "name": "Quick Fix",
+  "difficulty": 6,
+  "boxes": 3,
+  "optimalMoves": 35,
+  "optimalPushes": 9,
+  "grid": [
+    "####",
+    "##  ###",
+    "#     #",
+    "#.**$@#",
+    "#   ###",
+    "##  #",
+    " ####"
+  ]
+}

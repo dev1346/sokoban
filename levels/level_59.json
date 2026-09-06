@@ -1,0 +1,18 @@
+{
+  "id": 59,
+  "name": "Slide Right",
+  "difficulty": 6,
+  "boxes": 3,
+  "optimalMoves": 38,
+  "optimalPushes": 15,
+  "grid": [
+    "####",
+    "   #  #",
+    "   #@ #",
+    "####$.#",
+    "#   $.#",
+    "# # $.#",
+    "#    ##",
+    "######"
+  ]
+}

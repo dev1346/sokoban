@@ -1,0 +1,18 @@
+{
+  "id": 96,
+  "name": "Double Pair",
+  "difficulty": 10,
+  "boxes": 4,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "########",
+    "#    @ #",
+    "# $  $ #",
+    "## ## ##",
+    "# $# $#",
+    "#  .. #",
+    "## .. #",
+    " ######"
+  ]
+}

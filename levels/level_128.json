@@ -1,0 +1,17 @@
+{
+  "id": 128,
+  "name": "Quick Star",
+  "difficulty": 13,
+  "boxes": 3,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "#####",
+    "#####   #",
+    "## .**@ #",
+    "#  $   ##",
+    "# ## ####",
+    "#    #",
+    "######"
+  ]
+}

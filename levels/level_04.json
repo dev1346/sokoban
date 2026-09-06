@@ -1,0 +1,17 @@
+{
+  "id": 4,
+  "name": "Long Walk",
+  "difficulty": 1,
+  "boxes": 1,
+  "optimalMoves": 12,
+  "optimalPushes": 6,
+  "grid": [
+    "########",
+    "#      #",
+    "# @  $ #",
+    "#      #",
+    "#      #",
+    "# .    #",
+    "########"
+  ]
+}

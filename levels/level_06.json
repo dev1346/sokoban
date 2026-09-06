@@ -1,0 +1,16 @@
+{
+  "id": 6,
+  "name": "Open Room",
+  "difficulty": 1,
+  "boxes": 1,
+  "optimalMoves": 5,
+  "optimalPushes": 2,
+  "grid": [
+    "#######",
+    "#     #",
+    "# @ $ #",
+    "#     #",
+    "#   . #",
+    "#######"
+  ]
+}

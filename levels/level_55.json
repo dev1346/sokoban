@@ -1,0 +1,17 @@
+{
+  "id": 55,
+  "name": "Line Up",
+  "difficulty": 6,
+  "boxes": 3,
+  "optimalMoves": 25,
+  "optimalPushes": 9,
+  "grid": [
+    "#####",
+    "# @ #",
+    "#...#",
+    "#$$$##",
+    "#    #",
+    "#    #",
+    "######"
+  ]
+}

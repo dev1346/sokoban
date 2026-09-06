@@ -1,0 +1,17 @@
+{
+  "id": 143,
+  "name": "Quick Start",
+  "difficulty": 15,
+  "boxes": 2,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "####",
+    "# .#",
+    "#  ###",
+    "#*@  #",
+    "#  $ #",
+    "#  ###",
+    "####"
+  ]
+}

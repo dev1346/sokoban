@@ -1,0 +1,16 @@
+{
+  "id": 71,
+  "name": "Split Path",
+  "difficulty": 8,
+  "boxes": 3,
+  "optimalMoves": 107,
+  "optimalPushes": 29,
+  "grid": [
+    "###### #####",
+    "#    ###   #",
+    "# $$     #@#",
+    "# $ #...   #",
+    "#   ########",
+    "#####"
+  ]
+}

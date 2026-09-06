@@ -1,0 +1,17 @@
+{
+  "id": 115,
+  "name": "Symmetric Push",
+  "difficulty": 12,
+  "boxes": 6,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "########",
+    "#  #   #",
+    "# $$*. #",
+    "# .  . #",
+    "# .*$$@#",
+    "#   #  #",
+    "########"
+  ]
+}

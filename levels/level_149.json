@@ -1,0 +1,18 @@
+{
+  "id": 149,
+  "name": "Star Pattern",
+  "difficulty": 15,
+  "boxes": 6,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "#######",
+    "#     #",
+    "# .$. #",
+    "# $.$ #",
+    "# .$. #",
+    "# $.$ #",
+    "#  @  #",
+    "#######"
+  ]
+}

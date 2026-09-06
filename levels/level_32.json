@@ -1,0 +1,18 @@
+{
+  "id": 32,
+  "name": "Drop Zone",
+  "difficulty": 4,
+  "boxes": 2,
+  "optimalMoves": 41,
+  "optimalPushes": 20,
+  "grid": [
+    "########",
+    "#   .. #",
+    "#  @$$ #",
+    "##### ##",
+    "   #  #",
+    "   #  #",
+    "   #  #",
+    "   ####"
+  ]
+}

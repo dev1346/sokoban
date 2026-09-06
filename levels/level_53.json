@@ -1,0 +1,17 @@
+{
+  "id": 53,
+  "name": "Three in a Row",
+  "difficulty": 6,
+  "boxes": 3,
+  "optimalMoves": 21,
+  "optimalPushes": 5,
+  "grid": [
+    "####",
+    "#  ###",
+    "# $$ #",
+    "#... #",
+    "# @$ #",
+    "#   ##",
+    "#####"
+  ]
+}

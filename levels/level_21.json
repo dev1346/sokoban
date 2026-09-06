@@ -1,0 +1,17 @@
+{
+  "id": 21,
+  "name": "Four Open",
+  "difficulty": 3,
+  "boxes": 4,
+  "optimalMoves": 26,
+  "optimalPushes": 12,
+  "grid": [
+    "#########",
+    "# . . . #",
+    "#  $$$  #",
+    "## #  ##",
+    "#  $.   #",
+    "#   @   #",
+    "#########"
+  ]
+}

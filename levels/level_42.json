@@ -1,0 +1,19 @@
+{
+  "id": 42,
+  "name": "Wall Bounce",
+  "difficulty": 5,
+  "boxes": 2,
+  "optimalMoves": 71,
+  "optimalPushes": 13,
+  "grid": [
+    "#######",
+    "#     #",
+    "#. .  #",
+    "# ## ##",
+    "#  $ #",
+    "###$ #",
+    "  #@ #",
+    "  #  #",
+    "  ####"
+  ]
+}

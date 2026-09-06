@@ -1,0 +1,17 @@
+{
+  "id": 61,
+  "name": "Symmetry",
+  "difficulty": 7,
+  "boxes": 3,
+  "optimalMoves": 41,
+  "optimalPushes": 10,
+  "grid": [
+    "#######",
+    "#. #  #",
+    "#  $  #",
+    "#. $#@#",
+    "#  $  #",
+    "#. #  #",
+    "#######"
+  ]
+}

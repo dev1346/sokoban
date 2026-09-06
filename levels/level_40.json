@@ -1,0 +1,19 @@
+{
+  "id": 40,
+  "name": "Long Drop",
+  "difficulty": 4,
+  "boxes": 2,
+  "optimalMoves": 60,
+  "optimalPushes": 23,
+  "grid": [
+    "####",
+    "  #  #",
+    "  #@ #",
+    "  #  #",
+    "### ####",
+    "#    * #",
+    "#  $   #",
+    "#####. #",
+    "    ####"
+  ]
+}

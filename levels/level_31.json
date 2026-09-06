@@ -1,0 +1,16 @@
+{
+  "id": 31,
+  "name": "Side by Side",
+  "difficulty": 4,
+  "boxes": 2,
+  "optimalMoves": 41,
+  "optimalPushes": 13,
+  "grid": [
+    "####",
+    "###  ####",
+    "#     $ #",
+    "# #  #$ #",
+    "# . .#@ #",
+    "#########"
+  ]
+}

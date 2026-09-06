@@ -1,0 +1,17 @@
+{
+  "id": 51,
+  "name": "Triple Threat",
+  "difficulty": 6,
+  "boxes": 3,
+  "optimalMoves": 17,
+  "optimalPushes": 6,
+  "grid": [
+    "####",
+    " ##  #",
+    "##@$.##",
+    "# $$  #",
+    "# . . #",
+    "###   #",
+    "  #####"
+  ]
+}

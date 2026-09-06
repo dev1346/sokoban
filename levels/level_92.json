@@ -1,0 +1,17 @@
+{
+  "id": 92,
+  "name": "Five Push",
+  "difficulty": 10,
+  "boxes": 5,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "########",
+    "#      #",
+    "# $.#..##",
+    "##$.$$@ #",
+    "# $.#   #",
+    "#   #####",
+    "#####"
+  ]
+}

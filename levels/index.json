@@ -1,0 +1,1221 @@
+{
+  "totalLevels": 152,
+  "levels": [
+    {
+      "id": 1,
+      "name": "First Push",
+      "difficulty": 1,
+      "boxes": 1,
+      "optimalMoves": 1,
+      "optimalPushes": 1
+    },
+    {
+      "id": 2,
+      "name": "Straight Down",
+      "difficulty": 1,
+      "boxes": 1,
+      "optimalMoves": 1,
+      "optimalPushes": 1
+    },
+    {
+      "id": 3,
+      "name": "Around the Block",
+      "difficulty": 1,
+      "boxes": 1,
+      "optimalMoves": 5,
+      "optimalPushes": 3
+    },
+    {
+      "id": 4,
+      "name": "Long Walk",
+      "difficulty": 1,
+      "boxes": 1,
+      "optimalMoves": 12,
+      "optimalPushes": 6
+    },
+    {
+      "id": 5,
+      "name": "Corner Delivery",
+      "difficulty": 1,
+      "boxes": 1,
+      "optimalMoves": 7,
+      "optimalPushes": 4
+    },
+    {
+      "id": 6,
+      "name": "Open Room",
+      "difficulty": 1,
+      "boxes": 1,
+      "optimalMoves": 5,
+      "optimalPushes": 2
+    },
+    {
+      "id": 7,
+      "name": "Side by Side",
+      "difficulty": 1,
+      "boxes": 2,
+      "optimalMoves": 7,
+      "optimalPushes": 4
+    },
+    {
+      "id": 8,
+      "name": "Diagonal Targets",
+      "difficulty": 1,
+      "boxes": 2,
+      "optimalMoves": 13,
+      "optimalPushes": 7
+    },
+    {
+      "id": 9,
+      "name": "Stacked Push",
+      "difficulty": 1,
+      "boxes": 2,
+      "optimalMoves": 9,
+      "optimalPushes": 4
+    },
+    {
+      "id": 10,
+      "name": "Wall Divider",
+      "difficulty": 1,
+      "boxes": 2,
+      "optimalMoves": 12,
+      "optimalPushes": 4
+    },
+    {
+      "id": 11,
+      "name": "Tight Room",
+      "difficulty": 2,
+      "boxes": 2,
+      "optimalMoves": 7,
+      "optimalPushes": 4
+    },
+    {
+      "id": 12,
+      "name": "Wide Room",
+      "difficulty": 2,
+      "boxes": 2,
+      "optimalMoves": 11,
+      "optimalPushes": 5
+    },
+    {
+      "id": 13,
+      "name": "Zigzag",
+      "difficulty": 2,
+      "boxes": 2,
+      "optimalMoves": 9,
+      "optimalPushes": 3
+    },
+    {
+      "id": 14,
+      "name": "Symmetric",
+      "difficulty": 2,
+      "boxes": 3,
+      "optimalMoves": 21,
+      "optimalPushes": 5
+    },
+    {
+      "id": 15,
+      "name": "Narrow Path",
+      "difficulty": 2,
+      "boxes": 2,
+      "optimalMoves": 12,
+      "optimalPushes": 6
+    },
+    {
+      "id": 16,
+      "name": "Three Corridor",
+      "difficulty": 2,
+      "boxes": 3,
+      "optimalMoves": 18,
+      "optimalPushes": 4
+    },
+    {
+      "id": 17,
+      "name": "Row Push",
+      "difficulty": 2,
+      "boxes": 3,
+      "optimalMoves": 31,
+      "optimalPushes": 15
+    },
+    {
+      "id": 18,
+      "name": "Room Layout",
+      "difficulty": 2,
+      "boxes": 4,
+      "optimalMoves": 22,
+      "optimalPushes": 8
+    },
+    {
+      "id": 19,
+      "name": "Scatter",
+      "difficulty": 2,
+      "boxes": 4,
+      "optimalMoves": 22,
+      "optimalPushes": 7
+    },
+    {
+      "id": 20,
+      "name": "Three Maze",
+      "difficulty": 2,
+      "boxes": 3,
+      "optimalMoves": 24,
+      "optimalPushes": 7
+    },
+    {
+      "id": 21,
+      "name": "Four Open",
+      "difficulty": 3,
+      "boxes": 4,
+      "optimalMoves": 26,
+      "optimalPushes": 12
+    },
+    {
+      "id": 22,
+      "name": "Four Box",
+      "difficulty": 3,
+      "boxes": 4,
+      "optimalMoves": 21,
+      "optimalPushes": 8
+    },
+    {
+      "id": 23,
+      "name": "Corner Pocket",
+      "difficulty": 3,
+      "boxes": 2,
+      "optimalMoves": 17,
+      "optimalPushes": 5
+    },
+    {
+      "id": 24,
+      "name": "Hidden Star",
+      "difficulty": 3,
+      "boxes": 2,
+      "optimalMoves": 23,
+      "optimalPushes": 6
+    },
+    {
+      "id": 25,
+      "name": "Stairway Down",
+      "difficulty": 3,
+      "boxes": 2,
+      "optimalMoves": 30,
+      "optimalPushes": 10
+    },
+    {
+      "id": 26,
+      "name": "Double Diamond",
+      "difficulty": 3,
+      "boxes": 2,
+      "optimalMoves": 33,
+      "optimalPushes": 8
+    },
+    {
+      "id": 27,
+      "name": "Open Field",
+      "difficulty": 3,
+      "boxes": 2,
+      "optimalMoves": 33,
+      "optimalPushes": 9
+    },
+    {
+      "id": 28,
+      "name": "L-Shape",
+      "difficulty": 3,
+      "boxes": 2,
+      "optimalMoves": 34,
+      "optimalPushes": 8
+    },
+    {
+      "id": 29,
+      "name": "Side Entrance",
+      "difficulty": 3,
+      "boxes": 2,
+      "optimalMoves": 35,
+      "optimalPushes": 9
+    },
+    {
+      "id": 30,
+      "name": "Tunnel Exit",
+      "difficulty": 3,
+      "boxes": 2,
+      "optimalMoves": 37,
+      "optimalPushes": 14
+    },
+    {
+      "id": 31,
+      "name": "Side by Side",
+      "difficulty": 4,
+      "boxes": 2,
+      "optimalMoves": 41,
+      "optimalPushes": 13
+    },
+    {
+      "id": 32,
+      "name": "Drop Zone",
+      "difficulty": 4,
+      "boxes": 2,
+      "optimalMoves": 41,
+      "optimalPushes": 20
+    },
+    {
+      "id": 33,
+      "name": "Star Catcher",
+      "difficulty": 4,
+      "boxes": 2,
+      "optimalMoves": 47,
+      "optimalPushes": 8
+    },
+    {
+      "id": 34,
+      "name": "Open Door",
+      "difficulty": 4,
+      "boxes": 2,
+      "optimalMoves": 47,
+      "optimalPushes": 15
+    },
+    {
+      "id": 35,
+      "name": "Winding Path",
+      "difficulty": 4,
+      "boxes": 2,
+      "optimalMoves": 49,
+      "optimalPushes": 11
+    },
+    {
+      "id": 36,
+      "name": "Corner Trap",
+      "difficulty": 4,
+      "boxes": 2,
+      "optimalMoves": 50,
+      "optimalPushes": 10
+    },
+    {
+      "id": 37,
+      "name": "Push Forward",
+      "difficulty": 4,
+      "boxes": 2,
+      "optimalMoves": 50,
+      "optimalPushes": 16
+    },
+    {
+      "id": 38,
+      "name": "Key Hole",
+      "difficulty": 4,
+      "boxes": 2,
+      "optimalMoves": 51,
+      "optimalPushes": 10
+    },
+    {
+      "id": 39,
+      "name": "Center Star",
+      "difficulty": 4,
+      "boxes": 2,
+      "optimalMoves": 56,
+      "optimalPushes": 10
+    },
+    {
+      "id": 40,
+      "name": "Long Drop",
+      "difficulty": 4,
+      "boxes": 2,
+      "optimalMoves": 60,
+      "optimalPushes": 23
+    },
+    {
+      "id": 41,
+      "name": "Far Corner",
+      "difficulty": 5,
+      "boxes": 2,
+      "optimalMoves": 64,
+      "optimalPushes": 27
+    },
+    {
+      "id": 42,
+      "name": "Wall Bounce",
+      "difficulty": 5,
+      "boxes": 2,
+      "optimalMoves": 71,
+      "optimalPushes": 13
+    },
+    {
+      "id": 43,
+      "name": "Zigzag Push",
+      "difficulty": 5,
+      "boxes": 2,
+      "optimalMoves": 76,
+      "optimalPushes": 23
+    },
+    {
+      "id": 44,
+      "name": "Hidden Room",
+      "difficulty": 5,
+      "boxes": 2,
+      "optimalMoves": 78,
+      "optimalPushes": 18
+    },
+    {
+      "id": 45,
+      "name": "Broken Wall",
+      "difficulty": 5,
+      "boxes": 2,
+      "optimalMoves": 83,
+      "optimalPushes": 22
+    },
+    {
+      "id": 46,
+      "name": "Tight Squeeze",
+      "difficulty": 5,
+      "boxes": 2,
+      "optimalMoves": 85,
+      "optimalPushes": 27
+    },
+    {
+      "id": 47,
+      "name": "Spiral Out",
+      "difficulty": 5,
+      "boxes": 2,
+      "optimalMoves": 97,
+      "optimalPushes": 32
+    },
+    {
+      "id": 48,
+      "name": "Cross Roads",
+      "difficulty": 5,
+      "boxes": 2,
+      "optimalMoves": 101,
+      "optimalPushes": 50
+    },
+    {
+      "id": 49,
+      "name": "Open Space",
+      "difficulty": 5,
+      "boxes": 2,
+      "optimalMoves": 104,
+      "optimalPushes": 22
+    },
+    {
+      "id": 50,
+      "name": "Simple Swap",
+      "difficulty": 5,
+      "boxes": 3,
+      "optimalMoves": 16,
+      "optimalPushes": 3
+    },
+    {
+      "id": 51,
+      "name": "Triple Threat",
+      "difficulty": 6,
+      "boxes": 3,
+      "optimalMoves": 17,
+      "optimalPushes": 6
+    },
+    {
+      "id": 52,
+      "name": "Center Stage",
+      "difficulty": 6,
+      "boxes": 3,
+      "optimalMoves": 20,
+      "optimalPushes": 7
+    },
+    {
+      "id": 53,
+      "name": "Three in a Row",
+      "difficulty": 6,
+      "boxes": 3,
+      "optimalMoves": 21,
+      "optimalPushes": 5
+    },
+    {
+      "id": 54,
+      "name": "Room Service",
+      "difficulty": 6,
+      "boxes": 3,
+      "optimalMoves": 23,
+      "optimalPushes": 7
+    },
+    {
+      "id": 55,
+      "name": "Line Up",
+      "difficulty": 6,
+      "boxes": 3,
+      "optimalMoves": 25,
+      "optimalPushes": 9
+    },
+    {
+      "id": 56,
+      "name": "Narrow Gate",
+      "difficulty": 6,
+      "boxes": 3,
+      "optimalMoves": 29,
+      "optimalPushes": 7
+    },
+    {
+      "id": 57,
+      "name": "Quick Fix",
+      "difficulty": 6,
+      "boxes": 3,
+      "optimalMoves": 35,
+      "optimalPushes": 9
+    },
+    {
+      "id": 58,
+      "name": "Alcove",
+      "difficulty": 6,
+      "boxes": 3,
+      "optimalMoves": 37,
+      "optimalPushes": 8
+    },
+    {
+      "id": 59,
+      "name": "Slide Right",
+      "difficulty": 6,
+      "boxes": 3,
+      "optimalMoves": 38,
+      "optimalPushes": 15
+    },
+    {
+      "id": 60,
+      "name": "Three Down",
+      "difficulty": 6,
+      "boxes": 3,
+      "optimalMoves": 41,
+      "optimalPushes": 10
+    },
+    {
+      "id": 61,
+      "name": "Symmetry",
+      "difficulty": 7,
+      "boxes": 3,
+      "optimalMoves": 41,
+      "optimalPushes": 10
+    },
+    {
+      "id": 62,
+      "name": "Side Step",
+      "difficulty": 7,
+      "boxes": 3,
+      "optimalMoves": 44,
+      "optimalPushes": 11
+    },
+    {
+      "id": 63,
+      "name": "Three Lane",
+      "difficulty": 7,
+      "boxes": 3,
+      "optimalMoves": 45,
+      "optimalPushes": 11
+    },
+    {
+      "id": 64,
+      "name": "Push Trio",
+      "difficulty": 7,
+      "boxes": 3,
+      "optimalMoves": 50,
+      "optimalPushes": 15
+    },
+    {
+      "id": 65,
+      "name": "Labyrinth",
+      "difficulty": 7,
+      "boxes": 3,
+      "optimalMoves": 52,
+      "optimalPushes": 23
+    },
+    {
+      "id": 66,
+      "name": "Side Room",
+      "difficulty": 7,
+      "boxes": 3,
+      "optimalMoves": 64,
+      "optimalPushes": 14
+    },
+    {
+      "id": 67,
+      "name": "Dead End",
+      "difficulty": 7,
+      "boxes": 3,
+      "optimalMoves": 71,
+      "optimalPushes": 23
+    },
+    {
+      "id": 68,
+      "name": "Cascade",
+      "difficulty": 7,
+      "boxes": 3,
+      "optimalMoves": 82,
+      "optimalPushes": 21
+    },
+    {
+      "id": 69,
+      "name": "Three Pillars",
+      "difficulty": 7,
+      "boxes": 3,
+      "optimalMoves": 89,
+      "optimalPushes": 21
+    },
+    {
+      "id": 70,
+      "name": "Corner Maze",
+      "difficulty": 7,
+      "boxes": 3,
+      "optimalMoves": 100,
+      "optimalPushes": 39
+    },
+    {
+      "id": 71,
+      "name": "Split Path",
+      "difficulty": 8,
+      "boxes": 3,
+      "optimalMoves": 107,
+      "optimalPushes": 29
+    },
+    {
+      "id": 72,
+      "name": "Big Room",
+      "difficulty": 8,
+      "boxes": 3,
+      "optimalMoves": 178,
+      "optimalPushes": 52
+    },
+    {
+      "id": 73,
+      "name": "Narrow Hall",
+      "difficulty": 8,
+      "boxes": 2,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 74,
+      "name": "Star Point",
+      "difficulty": 8,
+      "boxes": 2,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 75,
+      "name": "Double Push",
+      "difficulty": 8,
+      "boxes": 2,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 76,
+      "name": "Side Room",
+      "difficulty": 8,
+      "boxes": 2,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 77,
+      "name": "Corner Drop",
+      "difficulty": 8,
+      "boxes": 2,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 78,
+      "name": "Hidden Path",
+      "difficulty": 8,
+      "boxes": 2,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 79,
+      "name": "Wall Push",
+      "difficulty": 8,
+      "boxes": 2,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 80,
+      "name": "Three Stars",
+      "difficulty": 8,
+      "boxes": 3,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 81,
+      "name": "Diamond Core",
+      "difficulty": 9,
+      "boxes": 3,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 82,
+      "name": "Triple Line",
+      "difficulty": 9,
+      "boxes": 3,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 83,
+      "name": "Long Hall",
+      "difficulty": 9,
+      "boxes": 3,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 84,
+      "name": "Twin Stars",
+      "difficulty": 9,
+      "boxes": 3,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 85,
+      "name": "Three Dots",
+      "difficulty": 9,
+      "boxes": 3,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 86,
+      "name": "Star Cross",
+      "difficulty": 9,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 87,
+      "name": "Side Corridor",
+      "difficulty": 9,
+      "boxes": 3,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 88,
+      "name": "Star Field",
+      "difficulty": 9,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 89,
+      "name": "Open Maze",
+      "difficulty": 9,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 90,
+      "name": "Grid Lock",
+      "difficulty": 9,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 91,
+      "name": "Hidden Chamber",
+      "difficulty": 10,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 92,
+      "name": "Five Push",
+      "difficulty": 10,
+      "boxes": 5,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 93,
+      "name": "Split Room",
+      "difficulty": 10,
+      "boxes": 3,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 94,
+      "name": "Four Corners",
+      "difficulty": 10,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 95,
+      "name": "Star Triangle",
+      "difficulty": 10,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 96,
+      "name": "Double Pair",
+      "difficulty": 10,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 97,
+      "name": "Wall of Boxes",
+      "difficulty": 10,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 98,
+      "name": "Maze Runner",
+      "difficulty": 10,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 99,
+      "name": "Star Push",
+      "difficulty": 10,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 100,
+      "name": "Twin Dots",
+      "difficulty": 10,
+      "boxes": 6,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 101,
+      "name": "Diagonal Line",
+      "difficulty": 11,
+      "boxes": 8,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 102,
+      "name": "Star Cluster",
+      "difficulty": 11,
+      "boxes": 6,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 103,
+      "name": "Open Arena",
+      "difficulty": 11,
+      "boxes": 3,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 104,
+      "name": "Big Maze",
+      "difficulty": 11,
+      "boxes": 3,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 105,
+      "name": "Star Cross II",
+      "difficulty": 11,
+      "boxes": 8,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 106,
+      "name": "Star Cross III",
+      "difficulty": 11,
+      "boxes": 8,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 107,
+      "name": "Zigzag Line",
+      "difficulty": 11,
+      "boxes": 6,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 108,
+      "name": "Open Field II",
+      "difficulty": 11,
+      "boxes": 3,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 109,
+      "name": "Side Push",
+      "difficulty": 11,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 110,
+      "name": "Mirror Image",
+      "difficulty": 11,
+      "boxes": 6,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 111,
+      "name": "Wall of Targets",
+      "difficulty": 12,
+      "boxes": 8,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 112,
+      "name": "Star Pyramid",
+      "difficulty": 12,
+      "boxes": 6,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 113,
+      "name": "Quick Push",
+      "difficulty": 12,
+      "boxes": 2,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 114,
+      "name": "Double Star",
+      "difficulty": 12,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 115,
+      "name": "Symmetric Push",
+      "difficulty": 12,
+      "boxes": 6,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 116,
+      "name": "Diamond Ring",
+      "difficulty": 12,
+      "boxes": 7,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 117,
+      "name": "Three Dots II",
+      "difficulty": 12,
+      "boxes": 3,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 118,
+      "name": "Four Dots",
+      "difficulty": 12,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 119,
+      "name": "Maze Core",
+      "difficulty": 12,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 120,
+      "name": "Box Ring",
+      "difficulty": 12,
+      "boxes": 12,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 121,
+      "name": "Star Explosion",
+      "difficulty": 13,
+      "boxes": 10,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 122,
+      "name": "Star Barrage",
+      "difficulty": 13,
+      "boxes": 6,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 123,
+      "name": "Three Pairs",
+      "difficulty": 13,
+      "boxes": 6,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 124,
+      "name": "Star Shield",
+      "difficulty": 13,
+      "boxes": 6,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 125,
+      "name": "Corner Star",
+      "difficulty": 13,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 126,
+      "name": "Three Steps",
+      "difficulty": 13,
+      "boxes": 3,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 127,
+      "name": "Star Trio",
+      "difficulty": 13,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 128,
+      "name": "Quick Star",
+      "difficulty": 13,
+      "boxes": 3,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 129,
+      "name": "Five Stars",
+      "difficulty": 13,
+      "boxes": 5,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 130,
+      "name": "Star Loop",
+      "difficulty": 13,
+      "boxes": 6,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 131,
+      "name": "Wall Push II",
+      "difficulty": 14,
+      "boxes": 3,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 132,
+      "name": "Star Pair",
+      "difficulty": 14,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 133,
+      "name": "Star Wall",
+      "difficulty": 14,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 134,
+      "name": "Center Star II",
+      "difficulty": 14,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 135,
+      "name": "Star Circle",
+      "difficulty": 14,
+      "boxes": 6,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 136,
+      "name": "Star Path",
+      "difficulty": 14,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 137,
+      "name": "Big Push",
+      "difficulty": 14,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 138,
+      "name": "Double Drop",
+      "difficulty": 14,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 139,
+      "name": "Star Dance",
+      "difficulty": 14,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 140,
+      "name": "Star Storm",
+      "difficulty": 14,
+      "boxes": 7,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 141,
+      "name": "Star Rain",
+      "difficulty": 15,
+      "boxes": 9,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 142,
+      "name": "Long Way Home",
+      "difficulty": 15,
+      "boxes": 6,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 143,
+      "name": "Quick Start",
+      "difficulty": 15,
+      "boxes": 2,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 144,
+      "name": "Star Swap",
+      "difficulty": 15,
+      "boxes": 3,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 145,
+      "name": "Open Corner",
+      "difficulty": 15,
+      "boxes": 2,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 146,
+      "name": "Room Service II",
+      "difficulty": 15,
+      "boxes": 3,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 147,
+      "name": "Center Push",
+      "difficulty": 15,
+      "boxes": 4,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 148,
+      "name": "Wide Room II",
+      "difficulty": 15,
+      "boxes": 3,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 149,
+      "name": "Star Pattern",
+      "difficulty": 15,
+      "boxes": 6,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 150,
+      "name": "Maze Exit",
+      "difficulty": 15,
+      "boxes": 2,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 151,
+      "name": "Stairway Up",
+      "difficulty": 16,
+      "boxes": 2,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    },
+    {
+      "id": 152,
+      "name": "Three Columns",
+      "difficulty": 16,
+      "boxes": 3,
+      "optimalMoves": 0,
+      "optimalPushes": 0
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": 114,
+  "name": "Double Star",
+  "difficulty": 12,
+  "boxes": 4,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "#####",
+    "   ####   #",
+    "####  $*. #",
+    "#  $*.   ##",
+    "# @   #####",
+    "#  ####",
+    "####"
+  ]
+}

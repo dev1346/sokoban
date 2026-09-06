@@ -1,0 +1,19 @@
+{
+  "id": 125,
+  "name": "Corner Star",
+  "difficulty": 13,
+  "boxes": 4,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "######",
+    " # @  #",
+    " # *$ #",
+    " # .###",
+    "## $$ #",
+    "#  .. #",
+    "#   ###",
+    "#  ##",
+    "#####"
+  ]
+}

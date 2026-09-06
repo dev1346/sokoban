@@ -1,0 +1,17 @@
+{
+  "id": 28,
+  "name": "L-Shape",
+  "difficulty": 3,
+  "boxes": 2,
+  "optimalMoves": 34,
+  "optimalPushes": 8,
+  "grid": [
+    "####",
+    "#  ###",
+    "#    ###",
+    "#  $*@ #",
+    "### .# #",
+    "  #    #",
+    "  ######"
+  ]
+}

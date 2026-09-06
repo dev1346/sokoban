@@ -1,0 +1,18 @@
+{
+  "id": 123,
+  "name": "Three Pairs",
+  "difficulty": 13,
+  "boxes": 6,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "#######",
+    "#  # @#",
+    "# $.$ #",
+    "# .$. #",
+    "# .$. #",
+    "# $.$ #",
+    "#  #  #",
+    "#######"
+  ]
+}

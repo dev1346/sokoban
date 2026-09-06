@@ -1,0 +1,17 @@
+{
+  "id": 80,
+  "name": "Three Stars",
+  "difficulty": 8,
+  "boxes": 3,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "########",
+    "#   @  #",
+    "#   *  #",
+    "###.$###",
+    "  # * #",
+    "  #   #",
+    "  #####"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": 151,
+  "name": "Stairway Up",
+  "difficulty": 16,
+  "boxes": 2,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "#####",
+    "#.  ##",
+    "#@$$ #",
+    "##   #",
+    " ##  #",
+    "  ##.#",
+    "   ###"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": 8,
+  "name": "Diagonal Targets",
+  "difficulty": 1,
+  "boxes": 2,
+  "optimalMoves": 13,
+  "optimalPushes": 7,
+  "grid": [
+    "######",
+    "#.  .#",
+    "#    #",
+    "# $  #",
+    "#  $ #",
+    "# @  #",
+    "######"
+  ]
+}

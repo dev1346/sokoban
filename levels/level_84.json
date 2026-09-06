@@ -1,0 +1,16 @@
+{
+  "id": 84,
+  "name": "Twin Stars",
+  "difficulty": 9,
+  "boxes": 3,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "####",
+    "###  #",
+    "# $.@##",
+    "#  *  #",
+    "#  *  #",
+    "#######"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": 56,
+  "name": "Narrow Gate",
+  "difficulty": 6,
+  "boxes": 3,
+  "optimalMoves": 29,
+  "optimalPushes": 7,
+  "grid": [
+    "####",
+    " #  ###",
+    " # $$ #",
+    "##... #",
+    "#  @$ #",
+    "#   ###",
+    "#####"
+  ]
+}

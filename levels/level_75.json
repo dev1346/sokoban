@@ -1,0 +1,18 @@
+{
+  "id": 75,
+  "name": "Double Push",
+  "difficulty": 8,
+  "boxes": 2,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "####",
+    "####  #",
+    "#  #  #",
+    "# . . #",
+    "# @$$ #",
+    "# # ###",
+    "#   #",
+    "#####"
+  ]
+}

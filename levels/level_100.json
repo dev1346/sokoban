@@ -1,0 +1,17 @@
+{
+  "id": 100,
+  "name": "Twin Dots",
+  "difficulty": 10,
+  "boxes": 6,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "########",
+    "#   .  #",
+    "# $ #  ##",
+    "# ** ** #",
+    "##  # $ #",
+    " #  . @ #",
+    " ########"
+  ]
+}

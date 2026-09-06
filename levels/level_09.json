@@ -1,0 +1,17 @@
+{
+  "id": 9,
+  "name": "Stacked Push",
+  "difficulty": 1,
+  "boxes": 2,
+  "optimalMoves": 9,
+  "optimalPushes": 4,
+  "grid": [
+    "######",
+    "# .  #",
+    "# $  #",
+    "# .  #",
+    "# $  #",
+    "# @  #",
+    "######"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": 88,
+  "name": "Star Field",
+  "difficulty": 9,
+  "boxes": 4,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "########",
+    "#  #  ##",
+    "# *#$.##",
+    "# * $. #",
+    "# @    #",
+    "#   ####",
+    "########"
+  ]
+}

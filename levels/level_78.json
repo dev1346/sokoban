@@ -1,0 +1,18 @@
+{
+  "id": 78,
+  "name": "Hidden Path",
+  "difficulty": 8,
+  "boxes": 2,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "####",
+    "####  #",
+    "#@.*  #",
+    "#  #  ###",
+    "####  $ #",
+    "   #  # #",
+    "   ##   #",
+    "    #####"
+  ]
+}

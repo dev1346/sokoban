@@ -1,0 +1,18 @@
+{
+  "id": 97,
+  "name": "Wall of Boxes",
+  "difficulty": 10,
+  "boxes": 4,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "####",
+    "# @####",
+    "#     ##",
+    "# .#.  #",
+    "##$$$$ #",
+    "# . .###",
+    "#    #",
+    "######"
+  ]
+}

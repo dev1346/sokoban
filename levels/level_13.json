@@ -1,0 +1,16 @@
+{
+  "id": 13,
+  "name": "Zigzag",
+  "difficulty": 2,
+  "boxes": 2,
+  "optimalMoves": 9,
+  "optimalPushes": 3,
+  "grid": [
+    "######",
+    "# @  #",
+    "# $. #",
+    "#  $ #",
+    "# .  #",
+    "######"
+  ]
+}

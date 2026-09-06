@@ -1,0 +1,18 @@
+{
+  "id": 101,
+  "name": "Diagonal Line",
+  "difficulty": 11,
+  "boxes": 8,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "######",
+    "#    ##",
+    "#.$$. ##",
+    "# .$$. ##",
+    "## .$$. #",
+    " ## .$$.#",
+    "  ## @  #",
+    "   ######"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": 82,
+  "name": "Triple Line",
+  "difficulty": 9,
+  "boxes": 3,
+  "optimalMoves": 0,
+  "optimalPushes": 0,
+  "grid": [
+    "#####",
+    "#   #",
+    "#   ###",
+    "#$$$@ #",
+    "#...  #",
+    "#######"
+  ]
+}
