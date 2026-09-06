@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Sokoban</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -117,6 +117,7 @@
     position: relative;
     width: 160px;
     height: 160px;
+    touch-action: none;
   }
 
   .dpad button {
@@ -131,6 +132,7 @@
     border-radius: 8px;
     user-select: none;
     -webkit-user-select: none;
+    touch-action: none;
   }
 
   .dpad .up    { top: 0; left: 54px; }
@@ -138,8 +140,36 @@
   .dpad .left  { top: 54px; left: 0; }
   .dpad .right { top: 54px; right: 0; }
 
+  /* Mobile responsive scaling */
   @media (pointer: coarse) {
     .dpad { display: block; }
+    
+    body {
+      padding: 0.5rem;
+    }
+    
+    h1 {
+      font-size: 1.5rem;
+    }
+    
+    .info-bar {
+      gap: 1rem;
+      font-size: 0.85rem;
+    }
+    
+    #game-canvas {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .controls {
+      gap: 0.4rem;
+    }
+    
+    button {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.8rem;
+    }
   }
 </style>
 </head>
@@ -2335,6 +2365,16 @@ document.addEventListener('keydown', e => {
 });
 
 // ── Start ──────────────────────────────────────────────────────────
+// Prevent double-tap zoom on mobile
+document.addEventListener('touchend', (e) => {
+  e.preventDefault();
+}, { passive: false });
+
+// Prevent pinch zoom
+document.addEventListener('gesturestart', (e) => e.preventDefault());
+document.addEventListener('gesturechange', (e) => e.preventDefault());
+document.addEventListener('gestureend', (e) => e.preventDefault());
+
 // Load saved progress or start from level 1
 const savedProgress = parseInt(localStorage.getItem('sokoban_highest_solved') || '0');
 const startLevel = savedProgress > 0 && savedProgress < TOTAL_LEVELS ? savedProgress : 0;
