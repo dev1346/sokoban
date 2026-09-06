@@ -2368,8 +2368,10 @@ document.addEventListener('touchend', (e) => {
         // Rotated 90° clockwise: swap the mappings
         if (deltaX > 0) {
           move(0, 1); // Screen right → Game down
+          playerDir = 'down'; // Face down (screen right direction)
         } else {
           move(0, -1); // Screen left → Game up
+          playerDir = 'up'; // Face up (screen left direction)
         }
       } else {
         if (deltaX > 0) {
@@ -2386,8 +2388,10 @@ document.addEventListener('touchend', (e) => {
         // Rotated 90° clockwise: swap the mappings
         if (deltaY > 0) {
           move(-1, 0); // Screen down → Game left
+          playerDir = 'left'; // Face left (screen down direction)
         } else {
           move(1, 0); // Screen up → Game right
+          playerDir = 'right'; // Face right (screen up direction)
         }
       } else {
         if (deltaY > 0) {
