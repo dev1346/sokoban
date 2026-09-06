@@ -149,7 +149,7 @@
 <div class="level-name" id="level-name"></div>
 
 <div class="info-bar">
-  <div>Level: <span class="val" id="level-num">1</span><span class="val" id="level-total">/44</span></div>
+  <div>Level: <span class="val" id="level-num">1</span><span class="val" id="level-total"></span></div>
   <div>Moves: <span class="val" id="move-count">0</span></div>
   <div>Pushes: <span class="val" id="push-count">0</span></div>
 </div>
@@ -161,6 +161,7 @@
   <button onclick="restartLevel()">Restart (R)</button>
   <button onclick="prevLevel()">&#9664; Prev (P)</button>
   <button onclick="nextLevel()">Next (N) &#9654;</button>
+  <button onclick="if(confirm('Reset all progress?')){localStorage.removeItem('sokoban_highest_solved'); loadLevel(0);}">Reset Progress</button>
   <span style="margin-left:1rem; display:flex; align-items:center; gap:0.4rem;">
     <label for="goto-input" style="color:#888; font-size:0.9rem;">Go to:</label>
     <input id="goto-input" type="number" min="1" max="152" 
@@ -2277,6 +2278,13 @@ function checkWin() {
   const targetSet = new Set(grid.targets.map(t => `${t.x},${t.y}`));
   if (grid.boxes.every(b => targetSet.has(`${b.x},${b.y}`))) {
     won = true;
+    
+    // Save progress to localStorage
+    const highestSolved = parseInt(localStorage.getItem('sokoban_highest_solved') || '0');
+    if (currentLevel >= highestSolved) {
+      localStorage.setItem('sokoban_highest_solved', String(currentLevel + 1));
+    }
+    
     document.getElementById('win-stats').textContent = `Solved in ${moves} moves and ${pushes} pushes!`;
     document.getElementById('win-overlay').classList.add('show');
   }
@@ -2297,13 +2305,7 @@ function updateUI() {
 
 // ── Input ──────────────────────────────────────────────────────────
 function goToLevel(num) {
-  if (isNaN(num) || num < 1 || num > 152) return;
-  hideWin();
-  loadLevel(num - 1);
-}
-
-function goToLevel(num) {
-  if (isNaN(num) || num < 1 || num > 152) return;
+  if (isNaN(num) || num < 1 || num > TOTAL_LEVELS) return;
   hideWin();
   loadLevel(num - 1);
 }
@@ -2333,7 +2335,10 @@ document.addEventListener('keydown', e => {
 });
 
 // ── Start ──────────────────────────────────────────────────────────
-loadLevel(0);
+// Load saved progress or start from level 1
+const savedProgress = parseInt(localStorage.getItem('sokoban_highest_solved') || '0');
+const startLevel = savedProgress > 0 && savedProgress < TOTAL_LEVELS ? savedProgress : 0;
+loadLevel(startLevel);
 </script>
 </body>
 </html>
