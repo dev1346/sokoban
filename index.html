@@ -2357,23 +2357,44 @@ document.addEventListener('touchend', (e) => {
   const deltaX = touchEndX - touchStartX;
   const deltaY = touchEndY - touchStartY;
   
+  // Check if canvas is rotated (landscape level)
+  const isRotated = canvas.dataset.isLandscape === '1';
+  
   // Determine swipe direction
   if (Math.abs(deltaX) > Math.abs(deltaY)) {
     // Horizontal swipe
     if (Math.abs(deltaX) > SWIPE_THRESHOLD) {
-      if (deltaX > 0) {
-        move(1, 0); // Right
+      if (isRotated) {
+        // Rotated 90° clockwise: screen right = game down, screen left = game up
+        if (deltaX > 0) {
+          move(0, 1); // Screen right → Game down
+        } else {
+          move(0, -1); // Screen left → Game up
+        }
       } else {
-        move(-1, 0); // Left
+        if (deltaX > 0) {
+          move(1, 0); // Right
+        } else {
+          move(-1, 0); // Left
+        }
       }
     }
   } else {
     // Vertical swipe
     if (Math.abs(deltaY) > SWIPE_THRESHOLD) {
-      if (deltaY > 0) {
-        move(0, 1); // Down
+      if (isRotated) {
+        // Rotated 90° clockwise: screen up = game right, screen down = game left
+        if (deltaY > 0) {
+          move(-1, 0); // Screen down → Game left
+        } else {
+          move(1, 0); // Screen up → Game right
+        }
       } else {
-        move(0, -1); // Up
+        if (deltaY > 0) {
+          move(0, 1); // Down
+        } else {
+          move(0, -1); // Up
+        }
       }
     }
   }
