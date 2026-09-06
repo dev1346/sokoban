@@ -1,4 +1,5 @@
 # Sokoban
+version 1.0.0
 
 A classic Sokoban puzzle game with 152 levels of increasing difficulty.
 
