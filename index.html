@@ -17,6 +17,7 @@
     justify-content: center;
     min-height: 100vh;
     overflow-x: hidden;
+    touch-action: manipulation;
   }
 
   h1 {
@@ -69,6 +70,7 @@
     cursor: pointer;
     font-size: 0.9rem;
     transition: all 0.15s;
+    touch-action: manipulation;
   }
 
   button:hover { background: #e94560; color: #fff; }
@@ -169,6 +171,21 @@
     button {
       padding: 0.4rem 0.8rem;
       font-size: 0.8rem;
+    }
+    
+    .win-overlay h2 {
+      font-size: 1.8rem;
+    }
+    
+    .win-overlay p {
+      font-size: 0.95rem;
+      padding: 0 1rem;
+      text-align: center;
+    }
+    
+    .win-overlay button {
+      font-size: 1rem;
+      padding: 0.6rem 1.5rem;
     }
   }
 </style>
@@ -2365,16 +2382,6 @@ document.addEventListener('keydown', e => {
 });
 
 // ── Start ──────────────────────────────────────────────────────────
-// Prevent double-tap zoom on mobile
-document.addEventListener('touchend', (e) => {
-  e.preventDefault();
-}, { passive: false });
-
-// Prevent pinch zoom
-document.addEventListener('gesturestart', (e) => e.preventDefault());
-document.addEventListener('gesturechange', (e) => e.preventDefault());
-document.addEventListener('gestureend', (e) => e.preventDefault());
-
 // Load saved progress or start from level 1
 const savedProgress = parseInt(localStorage.getItem('sokoban_highest_solved') || '0');
 const startLevel = savedProgress > 0 && savedProgress < TOTAL_LEVELS ? savedProgress : 0;
