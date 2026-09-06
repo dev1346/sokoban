@@ -2036,7 +2036,7 @@ function loadLevel(idx) {
   grid = data;
   playerX = data.px;
   playerY = data.py;
-  playerDir = 'down'; // default facing direction
+  playerDir = 'down';
   moves = 0;
   pushes = 0;
   history = [];
@@ -2061,33 +2061,21 @@ function loadLevel(idx) {
     const availableHeight = bodyRect.height - headerHeight - footerHeight - 20;
     const availableWidth = bodyRect.width - 20;
     
-    // Check if level is wider than tall (landscape)
-    const isLandscape = data.w > data.h;
-    
-    // For landscape levels, swap dimensions for rotation
-    const levelW = isLandscape ? data.h : data.w;
-    const levelH = isLandscape ? data.w : data.h;
-    
-    // Calculate tile size to fit
-    const maxTileByHeight = Math.floor(availableHeight / levelH);
-    const maxTileByWidth = Math.floor(availableWidth / levelW);
+    // Calculate tile size to fit (no rotation, just scale)
+    const maxTileByHeight = Math.floor(availableHeight / data.h);
+    const maxTileByWidth = Math.floor(availableWidth / data.w);
     const optimalTile = Math.min(TILE, maxTileByHeight, maxTileByWidth, 50);
     
-    // Set canvas dimensions (swapped for landscape rotation)
-    canvas.width = levelW * optimalTile;
-    canvas.height = levelH * optimalTile;
+    // Set canvas dimensions (natural orientation)
+    canvas.width = data.w * optimalTile;
+    canvas.height = data.h * optimalTile;
     
-    // Apply CSS rotation for landscape levels
-    if (isLandscape) {
-      canvas.style.transform = 'rotate(90deg)';
-      canvas.style.transformOrigin = 'center center';
-    } else {
-      canvas.style.transform = 'none';
-    }
+    // Remove any CSS transforms
+    canvas.style.transform = 'none';
     
     // Store current tile size for drawing
     canvas.dataset.tileSize = optimalTile;
-    canvas.dataset.isLandscape = isLandscape ? '1' : '0';
+    canvas.dataset.isLandscape = '0';
 
     updateUI();
     draw();
@@ -2102,7 +2090,6 @@ function draw() {
   
   // Use dynamic tile size
   const TILE = parseInt(canvas.dataset.tileSize) || 48;
-  const isLandscape = canvas.dataset.isLandscape === '1';
 
   ctx.fillStyle = '#16213e';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -2354,48 +2341,23 @@ document.addEventListener('touchend', (e) => {
   const deltaX = touchEndX - touchStartX;
   const deltaY = touchEndY - touchStartY;
   
-  // Check if canvas is rotated (landscape level)
-  const isRotated = canvas.dataset.isLandscape === '1';
-  
-  // Determine swipe direction
+  // Determine swipe direction (always matches visual direction)
   if (Math.abs(deltaX) > Math.abs(deltaY)) {
     // Horizontal swipe
     if (Math.abs(deltaX) > SWIPE_THRESHOLD) {
-      if (isRotated) {
-        // Canvas rotated 90° clockwise: top shows left, right shows top, bottom shows right, left shows bottom
-        if (deltaX > 0) {
-          move(0, -1); // Swipe right → move up (toward top of original)
-          playerDir = 'up';
-        } else {
-          move(0, 1); // Swipe left → move down (toward bottom of original)
-          playerDir = 'down';
-        }
+      if (deltaX > 0) {
+        move(1, 0); // Swipe right → move right
       } else {
-        if (deltaX > 0) {
-          move(1, 0); // Right
-        } else {
-          move(-1, 0); // Left
-        }
+        move(-1, 0); // Swipe left → move left
       }
     }
   } else {
     // Vertical swipe
     if (Math.abs(deltaY) > SWIPE_THRESHOLD) {
-      if (isRotated) {
-        // Canvas rotated 90° clockwise: top shows left, right shows top, bottom shows right, left shows bottom
-        if (deltaY > 0) {
-          move(1, 0); // Swipe down → move right (toward right of original)
-          playerDir = 'right';
-        } else {
-          move(-1, 0); // Swipe up → move left (toward left of original)
-          playerDir = 'left';
-        }
+      if (deltaY > 0) {
+        move(0, 1); // Swipe down → move down
       } else {
-        if (deltaY > 0) {
-          move(0, 1); // Down
-        } else {
-          move(0, -1); // Up
-        }
+        move(0, -1); // Swipe up → move up
       }
     }
   }
