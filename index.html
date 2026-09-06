@@ -2073,17 +2073,9 @@ function loadLevel(idx) {
     const maxTileByWidth = Math.floor(availableWidth / levelW);
     const optimalTile = Math.min(TILE, maxTileByHeight, maxTileByWidth, 50);
     
-    // Set canvas dimensions (swapped for landscape)
-    canvas.width = levelW * optimalTile;
-    canvas.height = levelH * optimalTile;
-    
-    // Apply rotation for landscape levels
-    if (isLandscape) {
-      canvas.style.transform = 'rotate(90deg)';
-      canvas.style.transformOrigin = 'center center';
-    } else {
-      canvas.style.transform = 'none';
-    }
+    // Set canvas dimensions (NOT swapped - we'll rotate in draw)
+    canvas.width = data.w * optimalTile;
+    canvas.height = data.h * optimalTile;
     
     // Store current tile size for drawing
     canvas.dataset.tileSize = optimalTile;
@@ -2110,9 +2102,9 @@ function draw() {
   for (let y = 0; y < h; y++) {
     for (let x = 0; x < w; x++) {
       const key = `${x},${y}`;
-      // Swap coordinates for landscape mode
+      // Rotate coordinates 90° clockwise for landscape mode
       const px = isLandscape ? y * TILE : x * TILE;
-      const py = isLandscape ? x * TILE : y * TILE;
+      const py = isLandscape ? (w - 1 - x) * TILE : y * TILE;
 
       if (walls.has(key)) {
         ctx.fillStyle = '#0f3460';
@@ -2161,9 +2153,9 @@ function draw() {
 
   for (const b of boxes) {
     const onTarget = targetSet.has(`${b.x},${b.y}`);
-    // Swap coordinates for landscape mode
+    // Rotate coordinates 90° clockwise for landscape mode
     const bx = isLandscape ? b.y * TILE : b.x * TILE;
-    const by = isLandscape ? b.x * TILE : b.y * TILE;
+    const by = isLandscape ? (w - 1 - b.x) * TILE : b.y * TILE;
     const pad = 3;
 
     // Shadow
@@ -2215,9 +2207,9 @@ function draw() {
   }
 
   {
-    // Swap coordinates for landscape mode
+    // Rotate coordinates 90° clockwise for landscape mode
     const px2 = isLandscape ? playerY * TILE : playerX * TILE;
-    const py2 = isLandscape ? playerX * TILE : playerY * TILE;
+    const py2 = isLandscape ? (w - 1 - playerX) * TILE : playerY * TILE;
     const cx = px2 + TILE / 2;
     const cy = py2 + TILE / 2;
     const size = TILE - 4;
@@ -2365,13 +2357,13 @@ document.addEventListener('touchend', (e) => {
     // Horizontal swipe
     if (Math.abs(deltaX) > SWIPE_THRESHOLD) {
       if (isRotated) {
-        // Rotated 90° clockwise: swap the mappings
+        // Rotated 90° clockwise: screen directions map to game directions differently
         if (deltaX > 0) {
-          move(0, 1); // Screen right → Game down
-          playerDir = 'down'; // Face down (screen right direction)
+          move(0, -1); // Screen right → Game up (top of level is now right side)
+          playerDir = 'up';
         } else {
-          move(0, -1); // Screen left → Game up
-          playerDir = 'up'; // Face up (screen left direction)
+          move(0, 1); // Screen left → Game down (bottom of level is now left side)
+          playerDir = 'down';
         }
       } else {
         if (deltaX > 0) {
@@ -2385,13 +2377,13 @@ document.addEventListener('touchend', (e) => {
     // Vertical swipe
     if (Math.abs(deltaY) > SWIPE_THRESHOLD) {
       if (isRotated) {
-        // Rotated 90° clockwise: swap the mappings
+        // Rotated 90° clockwise: screen directions map to game directions differently
         if (deltaY > 0) {
-          move(-1, 0); // Screen down → Game left
-          playerDir = 'left'; // Face left (screen down direction)
+          move(1, 0); // Screen down → Game right (right side of level is now bottom)
+          playerDir = 'right';
         } else {
-          move(1, 0); // Screen up → Game right
-          playerDir = 'right'; // Face right (screen up direction)
+          move(-1, 0); // Screen up → Game left (left side of level is now top)
+          playerDir = 'left';
         }
       } else {
         if (deltaY > 0) {
