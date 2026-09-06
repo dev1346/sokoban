@@ -60,12 +60,15 @@
     image-rendering: pixelated;
     flex-shrink: 1;
     min-height: 0;
+    display: block;
+    margin: 0 auto;
   }
 
   .controls {
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
     display: flex;
-    gap: 0.4rem;
+    gap: 0.3rem;
     flex-wrap: wrap;
     justify-content: center;
     flex-shrink: 0;
@@ -75,10 +78,10 @@
     background: #0f3460;
     color: #e0e0e0;
     border: 1px solid #16213e;
-    padding: 0.4rem 0.8rem;
+    padding: 0.3rem 0.6rem;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     transition: all 0.15s;
     touch-action: manipulation;
     flex-shrink: 0;
@@ -135,6 +138,21 @@
 <h1>SOKOBAN</h1>
 <div class="level-name" id="level-name"></div>
 
+<div class="controls">
+  <button onclick="undo()">Z</button>
+  <button onclick="restartLevel()">R</button>
+  <button onclick="prevLevel()">◀</button>
+  <button onclick="nextLevel()">▶</button>
+  <button onclick="if(confirm('Reset all progress?')){localStorage.removeItem('sokoban_highest_solved'); loadLevel(0);}">↺</button>
+  <span style="margin-left:0.3rem; display:flex; align-items:center; gap:0.2rem;">
+    <input id="goto-input" type="number" min="1" max="152" 
+           style="width:45px; background:#0f3460; color:#e0e0e0; border:1px solid #16213e; 
+                  border-radius:3px; padding:0.2rem 0.3rem; font-size:0.75rem;"
+           onkeydown="if(event.key==='Enter'){goToLevel(parseInt(this.value)); this.value='';}">
+    <button onclick="goToLevel(parseInt(document.getElementById('goto-input').value)); document.getElementById('goto-input').value='';">Go</button>
+  </span>
+</div>
+
 <div class="info-bar">
   <div>Level: <span class="val" id="level-num">1</span><span class="val" id="level-total"></span></div>
   <div>Moves: <span class="val" id="move-count">0</span></div>
@@ -143,23 +161,7 @@
 
 <canvas id="game-canvas"></canvas>
 
-<div class="controls">
-  <button onclick="undo()">Undo (Z)</button>
-  <button onclick="restartLevel()">Restart (R)</button>
-  <button onclick="prevLevel()">&#9664; Prev (P)</button>
-  <button onclick="nextLevel()">Next (N) &#9654;</button>
-  <button onclick="if(confirm('Reset all progress?')){localStorage.removeItem('sokoban_highest_solved'); loadLevel(0);}">Reset Progress</button>
-  <span style="margin-left:0.5rem; display:flex; align-items:center; gap:0.3rem;">
-    <label for="goto-input" style="color:#888; font-size:0.8rem;">Go to:</label>
-    <input id="goto-input" type="number" min="1" max="152" 
-           style="width:60px; background:#0f3460; color:#e0e0e0; border:1px solid #16213e; 
-                  border-radius:4px; padding:0.3rem 0.4rem; font-size:0.8rem;"
-           onkeydown="if(event.key==='Enter'){goToLevel(parseInt(this.value)); this.value='';}">
-    <button onclick="goToLevel(parseInt(document.getElementById('goto-input').value)); document.getElementById('goto-input').value='';">Go</button>
-  </span>
-</div>
-
-<p class="help">Arrow keys/WASD to move · Z undo · R restart · N next · P prev · Enter next (solved) · Swipe on mobile</p>
+<p class="help">Swipe to move · Z undo · R restart · ◀▶ levels · Enter next (solved)</p>
 
 <div class="win-overlay" id="win-overlay">
   <h2>🎉 Level Complete!</h2>
@@ -2046,29 +2048,46 @@ function loadLevel(idx) {
     const bodyRect = document.body.getBoundingClientRect();
     const header = document.querySelector('h1');
     const levelName = document.querySelector('.level-name');
-    const infoBar = document.querySelector('.info-bar');
     const controls = document.querySelector('.controls');
+    const infoBar = document.querySelector('.info-bar');
     const help = document.querySelector('.help');
     
     const headerHeight = (header ? header.offsetHeight : 0) + 
-                        (levelName ? levelName.offsetHeight : 0) + 
+                        (levelName ? levelName.offsetHeight : 0) +
+                        (controls ? controls.offsetHeight : 0) +
                         (infoBar ? infoBar.offsetHeight : 0);
-    const footerHeight = (controls ? controls.offsetHeight : 0) + 
-                        (help ? help.offsetHeight : 0);
+    const footerHeight = help ? help.offsetHeight : 0;
     
-    const availableHeight = bodyRect.height - headerHeight - footerHeight - 20; // 20px padding
+    const availableHeight = bodyRect.height - headerHeight - footerHeight - 20;
     const availableWidth = bodyRect.width - 20;
     
-    // Calculate tile size to fit
-    const maxTileByHeight = Math.floor(availableHeight / data.h);
-    const maxTileByWidth = Math.floor(availableWidth / data.w);
-    const optimalTile = Math.min(TILE, maxTileByHeight, maxTileByWidth, 50); // Cap at 50px
+    // Check if level is wider than tall (landscape)
+    const isLandscape = data.w > data.h;
     
-    canvas.width = data.w * optimalTile;
-    canvas.height = data.h * optimalTile;
+    // For landscape levels, swap dimensions for rotation
+    const levelW = isLandscape ? data.h : data.w;
+    const levelH = isLandscape ? data.w : data.h;
+    
+    // Calculate tile size to fit
+    const maxTileByHeight = Math.floor(availableHeight / levelH);
+    const maxTileByWidth = Math.floor(availableWidth / levelW);
+    const optimalTile = Math.min(TILE, maxTileByHeight, maxTileByWidth, 50);
+    
+    // Set canvas dimensions (swapped for landscape)
+    canvas.width = levelW * optimalTile;
+    canvas.height = levelH * optimalTile;
+    
+    // Apply rotation for landscape levels
+    if (isLandscape) {
+      canvas.style.transform = 'rotate(90deg)';
+      canvas.style.transformOrigin = 'center center';
+    } else {
+      canvas.style.transform = 'none';
+    }
     
     // Store current tile size for drawing
     canvas.dataset.tileSize = optimalTile;
+    canvas.dataset.isLandscape = isLandscape ? '1' : '0';
 
     updateUI();
     draw();
@@ -2083,6 +2102,7 @@ function draw() {
   
   // Use dynamic tile size
   const TILE = parseInt(canvas.dataset.tileSize) || 48;
+  const isLandscape = canvas.dataset.isLandscape === '1';
 
   ctx.fillStyle = '#16213e';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -2090,8 +2110,9 @@ function draw() {
   for (let y = 0; y < h; y++) {
     for (let x = 0; x < w; x++) {
       const key = `${x},${y}`;
-      const px = x * TILE;
-      const py = y * TILE;
+      // Swap coordinates for landscape mode
+      const px = isLandscape ? y * TILE : x * TILE;
+      const py = isLandscape ? x * TILE : y * TILE;
 
       if (walls.has(key)) {
         ctx.fillStyle = '#0f3460';
@@ -2140,8 +2161,9 @@ function draw() {
 
   for (const b of boxes) {
     const onTarget = targetSet.has(`${b.x},${b.y}`);
-    const bx = b.x * TILE;
-    const by = b.y * TILE;
+    // Swap coordinates for landscape mode
+    const bx = isLandscape ? b.y * TILE : b.x * TILE;
+    const by = isLandscape ? b.x * TILE : b.y * TILE;
     const pad = 3;
 
     // Shadow
@@ -2193,8 +2215,9 @@ function draw() {
   }
 
   {
-    const px2 = playerX * TILE;
-    const py2 = playerY * TILE;
+    // Swap coordinates for landscape mode
+    const px2 = isLandscape ? playerY * TILE : playerX * TILE;
+    const py2 = isLandscape ? playerX * TILE : playerY * TILE;
     const cx = px2 + TILE / 2;
     const cy = py2 + TILE / 2;
     const size = TILE - 4;
