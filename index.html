@@ -2073,9 +2073,17 @@ function loadLevel(idx) {
     const maxTileByWidth = Math.floor(availableWidth / levelW);
     const optimalTile = Math.min(TILE, maxTileByHeight, maxTileByWidth, 50);
     
-    // Set canvas dimensions (NOT swapped - we'll rotate in draw)
-    canvas.width = data.w * optimalTile;
-    canvas.height = data.h * optimalTile;
+    // Set canvas dimensions (swapped for landscape rotation)
+    canvas.width = levelW * optimalTile;
+    canvas.height = levelH * optimalTile;
+    
+    // Apply CSS rotation for landscape levels
+    if (isLandscape) {
+      canvas.style.transform = 'rotate(90deg)';
+      canvas.style.transformOrigin = 'center center';
+    } else {
+      canvas.style.transform = 'none';
+    }
     
     // Store current tile size for drawing
     canvas.dataset.tileSize = optimalTile;
@@ -2102,9 +2110,8 @@ function draw() {
   for (let y = 0; y < h; y++) {
     for (let x = 0; x < w; x++) {
       const key = `${x},${y}`;
-      // Rotate coordinates 90° clockwise for landscape mode
-      const px = isLandscape ? y * TILE : x * TILE;
-      const py = isLandscape ? (w - 1 - x) * TILE : y * TILE;
+      const px = x * TILE;
+      const py = y * TILE;
 
       if (walls.has(key)) {
         ctx.fillStyle = '#0f3460';
@@ -2153,9 +2160,8 @@ function draw() {
 
   for (const b of boxes) {
     const onTarget = targetSet.has(`${b.x},${b.y}`);
-    // Rotate coordinates 90° clockwise for landscape mode
-    const bx = isLandscape ? b.y * TILE : b.x * TILE;
-    const by = isLandscape ? (w - 1 - b.x) * TILE : b.y * TILE;
+    const bx = b.x * TILE;
+    const by = b.y * TILE;
     const pad = 3;
 
     // Shadow
@@ -2207,9 +2213,8 @@ function draw() {
   }
 
   {
-    // Rotate coordinates 90° clockwise for landscape mode
-    const px2 = isLandscape ? playerY * TILE : playerX * TILE;
-    const py2 = isLandscape ? (w - 1 - playerX) * TILE : playerY * TILE;
+    const px2 = playerX * TILE;
+    const py2 = playerY * TILE;
     const cx = px2 + TILE / 2;
     const cy = py2 + TILE / 2;
     const size = TILE - 4;
@@ -2357,12 +2362,12 @@ document.addEventListener('touchend', (e) => {
     // Horizontal swipe
     if (Math.abs(deltaX) > SWIPE_THRESHOLD) {
       if (isRotated) {
-        // Rotated 90° clockwise: screen directions map to game directions differently
+        // Canvas rotated 90° clockwise: top shows left, right shows top, bottom shows right, left shows bottom
         if (deltaX > 0) {
-          move(0, -1); // Screen right → Game up (top of level is now right side)
+          move(0, -1); // Swipe right → move up (toward top of original)
           playerDir = 'up';
         } else {
-          move(0, 1); // Screen left → Game down (bottom of level is now left side)
+          move(0, 1); // Swipe left → move down (toward bottom of original)
           playerDir = 'down';
         }
       } else {
@@ -2377,12 +2382,12 @@ document.addEventListener('touchend', (e) => {
     // Vertical swipe
     if (Math.abs(deltaY) > SWIPE_THRESHOLD) {
       if (isRotated) {
-        // Rotated 90° clockwise: screen directions map to game directions differently
+        // Canvas rotated 90° clockwise: top shows left, right shows top, bottom shows right, left shows bottom
         if (deltaY > 0) {
-          move(1, 0); // Screen down → Game right (right side of level is now bottom)
+          move(1, 0); // Swipe down → move right (toward right of original)
           playerDir = 'right';
         } else {
-          move(-1, 0); // Screen up → Game left (left side of level is now top)
+          move(-1, 0); // Swipe up → move left (toward left of original)
           playerDir = 'left';
         }
       } else {
